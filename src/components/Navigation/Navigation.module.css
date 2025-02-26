@@ -1,0 +1,15 @@
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.headerMenuLink {
+  display: block;
+  padding: 24px 0;
+}
+
+.headerMenuLinkActive {
+  color: #0b44cd;
+}
