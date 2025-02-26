@@ -1,0 +1,30 @@
+.hero {
+  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../images/bg-home-page.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 436px;
+  padding-bottom: 60px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.heroTitle {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 24px;
+  line-height: 1.33;
+}
