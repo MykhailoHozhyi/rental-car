@@ -1,13 +1,10 @@
-import { NavLink } from 'react-router-dom';
 import css from './Btn.module.css';
 
-function Btn({ size, children }) {
+function Btn({ size, type, children }) {
   return (
-    <NavLink to="/catalog">
-      <button className={`${css.btn} ${css[size]}`} type="button">
-        {children}
-      </button>
-    </NavLink>
+    <button className={`${css.btn} ${css[size]}`} type={type}>
+      {children}
+    </button>
   );
 }
 

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Btn from '../../components/Btn/Btn';
 import css from './HomePage.module.css';
 
@@ -11,7 +12,11 @@ function HomePage() {
             Reliable and budget-friendly rentals for any journey
           </p>
         </div>
-        <Btn size="large">View Catalog</Btn>
+        <NavLink to="/catalog">
+          <Btn size="large" type="button">
+            View Catalog
+          </Btn>
+        </NavLink>
       </div>
     </div>
   );
