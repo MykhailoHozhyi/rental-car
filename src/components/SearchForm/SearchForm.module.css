@@ -48,6 +48,10 @@
   border: none;
 }
 
+.fieldMileage:focus {
+  outline: transparent;
+}
+
 .fieldMileage:first-child {
   border-radius: 12px 0px 0px 12px;
   border-right: 1px solid #dadde1;

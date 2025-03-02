@@ -3,41 +3,7 @@ import { useId } from 'react';
 import Btn from '../Btn/Btn';
 import CustomSelect from '../CustomSelect/CustomSelect';
 
-const carBrands = [
-  'Aston Martin',
-  'Audi',
-  'BMW',
-  'Bentley',
-  'Buick',
-  'Chevrolet',
-  'Chrysler',
-  'GMC',
-  'HUMMER',
-  'Hyundai',
-  'Kia',
-  'Lamborghini',
-  'Land Rover',
-  'Lincoln',
-  'MINI',
-  'Mercedes-Benz',
-  'Mitsubishi',
-  'Nissan',
-  'Pontiac',
-  'Subaru',
-  'Volvo',
-];
-const brands = carBrands.map(brand => ({
-  value: brand.toLowerCase().replace(/\s+/g, '-'),
-  label: brand,
-}));
-
-const carPrices = Array.from({ length: 10 }, (_, i) => (i + 1) * 10);
-const price = carPrices.map(price => ({
-  value: `${price}`,
-  label: `${price}`,
-}));
-
-function SearchForm() {
+function SearchForm({ brands, price }) {
   const carBrandId = useId();
   const carPriceId = useId();
   const carMileageFromId = useId();
